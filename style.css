@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+}
+
+span {
+    font-family: 'Source Sans Pro';
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container-div {
+    margin-bottom: 40px;
+}
+
+.jumbotron {
+    height: 100vh;
+    background: no-repeat center fixed url(computer.jpg);
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/background.jpg', sizingMethod='scale')";*/
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/background.jpg', sizingMethod='scale');
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+.jumbotron-text-container {
+    position: relative;
+    top: 28%;
+    z-index: 4;
+    max-width: 100%;
+    padding-left: 50px;
+}
+
+.jumbotron-text {
+    font-weight: bold;
+    font-style: normal;
+    font-size: 110px;
+    color: white;
+}
+
+.container {
+    padding: 40px;
+    padding-left: 50px;
+    padding-right: 20px;
+    /* top, right, bottom, left*/
+}
+
+.container-title {
+    font-size: 52px;
+}
+
+.hash-tag {
+    color: rebeccapurple;
+    font-weight: 700;
+}
