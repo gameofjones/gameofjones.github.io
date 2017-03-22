@@ -1,3 +1,13 @@
+@viewport {
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+
+@-ms-viewport {
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+
 body {
     margin: 0;
     color: #333;
