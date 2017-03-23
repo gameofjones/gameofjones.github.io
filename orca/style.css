@@ -18,3 +18,8 @@ body {
 p {
     line-height: 1.2;
 }
+
+.screen-width {
+    max-width: 100%;
+    height: auto;
+}
