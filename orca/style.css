@@ -63,3 +63,19 @@ p {
 .container-title {
     font-size: 52px;
 }
+
+.btn {
+    font-size: .75rem;
+    line-height: 1;
+    padding: .625rem 0 .625rem;
+    height: 1.875rem;
+    width: 6.25rem;
+    color: #fff;
+    background-color: teal;
+    border: 0;
+    border-radius: 2px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+}
