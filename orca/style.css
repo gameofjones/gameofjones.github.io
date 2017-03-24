@@ -11,20 +11,55 @@
 body {
     margin: 0;
     color: #333;
+}
+
+span, p {
     font-family: 'Source Sans Pro';
-    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container-div {
+    margin-bottom: 40px;
 }
 
 p {
+    margin-top: 0;
     line-height: 1.2;
 }
 
-.screen-width {
-    max-width: 100%;
-    height: auto;
+.hero {
+    height: 100vh;
+    background: no-repeat center fixed url(transit-4.jpg);
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-bottom: 0px;
+    padding: 0px;
 }
 
-.menu {
-    background-color: white;
-    
+.hero-text-container {
+    position: relative;
+    top: 28%;
+    z-index: 4;
+    max-width: 100%;
+    padding-left: 50px;
+}
+
+.hero-text {
+    font-weight: bold;
+    font-style: normal;
+    font-size: 110px;
+    color: white;
+}
+
+.container {
+    padding: 40px 50px 40px 50px;
+}
+
+.container-title {
+    font-size: 52px;
 }
