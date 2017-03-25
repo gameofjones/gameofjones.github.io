@@ -67,7 +67,6 @@ p {
 .btn {
     font-size: .75rem;
     line-height: 1;
-    padding: .625rem 0 .625rem;
     height: 1.875rem;
     width: 6.25rem;
     color: #fff;
@@ -78,4 +77,28 @@ p {
     display: inline-block;
     text-align: center;
     text-transform: uppercase;
+}
+
+.btn-white {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+}
+
+.orca-logo-word {
+    color: #1b49a0;
+    float: left;
+    font-size: 52px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.menu-item {
+    float: left;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    text-transform: lowercase;
+    font-size: 16px;
+    font-family: 'Source Sans Pro';
 }
