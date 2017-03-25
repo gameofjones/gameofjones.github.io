@@ -28,6 +28,85 @@ p {
     line-height: 1.2;
 }
 
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: teal;
+}
+
+.top {
+    min-height: 60px;
+    background-color: #fff;
+    overflow: auto;
+}
+
+.orca-logo-word {
+    color: #1b49a0;
+    float: left;
+    font-size: 52px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 700;
+    padding: 0 0 0 12px;
+}
+
+.menu-container {
+    float: right;
+    padding: 14px;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.menu-item {
+    float: left;
+    padding: 10px;
+    text-decoration: none !important;
+    color: #333 !important;
+    font-size: 16px;
+}
+
+.menu-item:hover {
+    border-bottom: 3px solid teal;
+}
+
+.btn {
+    font-size: .75rem;
+    line-height: 1;
+    height: 1.875rem;
+    width: 6.25rem;
+    color: #fff;
+    background-color: #1b49a0;
+    border: 0;
+    border-radius: 2px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #0d338a;
+}
+
+.btn-white {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+}
+
+.btn-medium {
+    font-size: 1rem;
+    height: 2rem;
+    margin-top: 10px;
+    width: 7.25rem;
+}
+
 .hero {
     height: 645px;
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(transit-4.jpg);
@@ -55,6 +134,16 @@ p {
     top: 50%;
     width: 100%;
     z-index: 4;
+    color: white;
+}
+
+.hero-center {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    max-width: 550px;
 }
 
 .hero-text {
@@ -70,41 +159,4 @@ p {
 
 .container-title {
     font-size: 52px;
-}
-
-.btn {
-    font-size: .75rem;
-    line-height: 1;
-    height: 1.875rem;
-    width: 6.25rem;
-    color: #fff;
-    background-color: teal;
-    border: 0;
-    border-radius: 2px;
-    cursor: pointer;
-    display: inline-block;
-    text-align: center;
-}
-
-.btn-white {
-    background-color: white;
-    border: 2px solid black;
-    color: black;
-}
-
-.orca-logo-word {
-    color: #1b49a0;
-    float: left;
-    font-size: 52px;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-weight: 700;
-    padding: 0 0 0 12px;
-}
-
-.menu-item {
-    float: left;
-    padding: 10px;
-    text-decoration: none !important;
-    color: #333 !important;
-    font-size: 16px;
 }
