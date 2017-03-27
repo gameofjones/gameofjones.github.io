@@ -71,25 +71,24 @@ a:hover {
     text-decoration: none !important;
     color: #333 !important;
     font-size: 16px;
+    position: relative;
+    display: inline-block;
 }
 
-.menu-item:after, .menu-item:before {
-  display: block;
-  content: '';
-  border-bottom: solid 3px teal;  
-  transform: scaleX(0);  
-  transition: transform 250ms ease-in-out;
+.menu-item:after {
+	position: absolute;
+    left: 50%;
+	content: '';
+	height: 4px;
+    background: teal;
+    transition: all 0.15s linear;
+    width: 0;
+    bottom: 0;  
 }
 
-.menu-item:before {
-  position: absolute;
-  bottom: 1.2em;
-  left: 0;
-  width: 100%;
-}
-  
-.menu-itemh1:hover:after, .menu-item:hover:before { 
-    transform: scaleX(1); 
+.menu-item:hover:after {
+    width: 100%;
+    margin-left: -50% 
 }
 
 .btn-container {
