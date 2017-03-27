@@ -51,6 +51,7 @@ a:hover {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-weight: 700;
     padding: 0 0 0 12px;
+    cursor: pointer;
 }
 
 .menu-container {
@@ -63,10 +64,10 @@ a:hover {
     margin: 0;
     padding: 0;
     float: left;
+    /*todo: figure out how to get rid of floats with inline-block*/
 }
 
 .menu-item {
-    float: left;
     padding: 10px;
     text-decoration: none !important;
     color: #333 !important;
@@ -89,6 +90,23 @@ a:hover {
 .menu-item:hover:after {
     width: 100%;
     margin-left: -50% 
+}
+
+.menu-item-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.menu-item-content a:hover {
+    background-color: #ddd;
+}
+
+.menu-item:hover .menu-item-content {
+    display: block;
 }
 
 .btn-container {
@@ -122,6 +140,7 @@ a:hover {
 
 .btn-white:hover {
     background-color: white;
+    color: teal;
     border-color: teal;
 }
 
