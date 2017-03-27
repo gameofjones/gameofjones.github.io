@@ -74,11 +74,8 @@ a:hover {
 
 .menu-item {
     padding: 10px;
-    text-decoration: none !important;
-    color: #333 !important;
-    font-size: 16px;
-    position: relative;
-    float: left;
+    color: #333;
+    display: block;
 }
 
 .menu-item:after {
