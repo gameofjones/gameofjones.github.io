@@ -62,9 +62,8 @@ a:hover {
 .menu {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0 10px 0 0;
     float: left;
-    /*todo: figure out how to get rid of floats with inline-block*/
 }
 
 .dropdown {
@@ -102,7 +101,7 @@ a:hover {
     min-width: auto;
     border-top: 1px solid #f4f4f4;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 5;
 }
 
 .menu-item-content a:hover {
