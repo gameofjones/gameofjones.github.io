@@ -71,25 +71,28 @@ a:hover {
     text-decoration: none !important;
     color: #333 !important;
     font-size: 16px;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
 }
 
-.menu-item:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    left: 50%;
-    right: 50%;
-    bottom: 0;
-    background: teal;
-    height: 4px;
-    -webkit-transition-property: left, right;
-    transition-property: left, right;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
+menu-item:after, menu-item:before {
+  display:block;
+  content: '';
+  border-bottom: solid 3px teal;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+
+menu-item:before{
+  position:absolute;
+  bottom:1.2em; left:0;
+  width:100%;
+}
+  
+menu-itemh1:hover:after, menu-item:hover:before { 
+    transform: scaleX(1); 
+}
+
+.menu-item:hover {
+    border-bottom: 3px solid teal;
 }
 
 .btn-container {
