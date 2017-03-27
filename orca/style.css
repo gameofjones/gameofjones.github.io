@@ -73,7 +73,7 @@ a:hover {
     font-size: 16px;
 }
 
-menu-item:after, menu-item:before {
+.menu-item:after, .menu-item:before {
   display: block;
   content: '';
   border-bottom: solid 3px teal;  
@@ -81,14 +81,14 @@ menu-item:after, menu-item:before {
   transition: transform 250ms ease-in-out;
 }
 
-menu-item:before {
+.menu-item:before {
   position: absolute;
   bottom: 1.2em;
   left: 0;
   width: 100%;
 }
   
-menu-itemh1:hover:after, menu-item:hover:before { 
+.menu-itemh1:hover:after, .menu-item:hover:before { 
     transform: scaleX(1); 
 }
 
