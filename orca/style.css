@@ -67,6 +67,10 @@ a:hover {
     /*todo: figure out how to get rid of floats with inline-block*/
 }
 
+.dropdown {
+    overflow: hidden;
+}
+
 .menu-item {
     padding: 10px;
     text-decoration: none !important;
@@ -95,8 +99,9 @@ a:hover {
 .menu-item-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
+    background-color: white;
+    min-width: auto;
+    border-top: 1px solid lightblue;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -105,8 +110,14 @@ a:hover {
     background-color: #ddd;
 }
 
-.menu-item:hover .menu-item-content {
+.dropdown:hover .menu-item-content {
     display: block;
+}
+
+.menu-sub-item {
+    display: block;
+    height: auto;
+    padding: 10px;
 }
 
 .btn-container {
