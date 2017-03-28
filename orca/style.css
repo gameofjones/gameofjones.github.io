@@ -12,6 +12,10 @@
     .menu {
         display: none;
     }
+
+    .hamburger {
+        display: block;
+    }
 }
 
 body {
@@ -122,6 +126,12 @@ a:hover {
     display: block;
     height: auto;
     padding: 10px;
+}
+
+.hamburger {
+    display: none;
+    height: 32px;
+    width: 32px;
 }
 
 .btn-container {
