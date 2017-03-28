@@ -4,8 +4,8 @@
 }
 
 @-ms-viewport {
+    width: device-width;
     zoom: 1.0;
-    width: extend-to-zoom;
 }
 
 body {
