@@ -9,12 +9,9 @@
 }
 
 @media screen and (max-width: 750px) {
-    .menu {
-        display: none;
-    }
-
     .hamburger {
         display: block;
+        float: left;
     }
 }
 
