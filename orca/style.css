@@ -129,9 +129,14 @@ a:hover {
 }
 
 .hamburger {
-    display: none;
+    float: left;
     height: 32px;
     width: 32px;
+    cursor: pointer;
+    background-color: #999;
+    -webkit-mask: url(hamburger.svg) no-repeat 50% 50%;
+    -webkit-mask-size: 90% 90%;
+    margin-top: 5px;
 }
 
 .btn-container {
