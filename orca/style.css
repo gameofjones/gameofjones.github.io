@@ -120,14 +120,14 @@ a:hover {
 
 .hamburger {
     display: none;
-    float: left;
+    float: right;
+    margin: 4px 10px 0 0;
     height: 32px;
     width: 32px;
     cursor: pointer;
     background-color: teal;
     -webkit-mask: url(hamburger.svg) no-repeat 50% 50%;
     -webkit-mask-size: 90% 90%;
-    margin-top: 5px;
 }
 
 .btn-container {
@@ -224,6 +224,10 @@ a:hover {
 
     .hamburger {
         display: block;
+    }
+
+    .menu-container {
         float: left;
+        width: 100%;
     }
 }
