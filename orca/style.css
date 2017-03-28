@@ -9,6 +9,11 @@
 }
 
 @media screen and (max-width: 750px) {
+    .menu {
+        display: none;
+    }
+
+@media screen and (max-width: 750px) {
     .hamburger {
         display: block;
         float: left;
