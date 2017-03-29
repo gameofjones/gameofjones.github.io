@@ -262,4 +262,8 @@ a:hover {
         position: relative;
         border-top: 0px;
     }
+
+    .dropdown:hover > .menu-item-content {
+        display: none;
+    }
 }
