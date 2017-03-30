@@ -42,6 +42,9 @@ a:hover {
     background-color: #fff;
     overflow: auto;
     padding-bottom: 6px;
+    max-width: 1400px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .orca-logo-word {
@@ -215,6 +218,51 @@ a:hover {
 
 .container-title {
     font-size: 52px;
+}
+
+.grid {
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    padding: 30px 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.cell {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    padding: 0 10px 0 0;
+}
+
+.about-svg {
+    height: 200px;
+    width: 200px;
+    cursor: pointer;
+    background: #333;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.about-text {
+    text-align: center;
+}
+
+.cash-pass {
+    -webkit-mask: url(credit-card.svg) no-repeat 50% 50%;
+    -webkit-mask-size: 90% 90%;
+}
+
+.track-transfer {
+    -webkit-mask: url(placeholders.svg) no-repeat 50% 50%;
+    -webkit-mask-size: 90% 90%;
+}
+
+.add-value {
+    -webkit-mask: url(wallet.svg) no-repeat 50% 50%;
+    -webkit-mask-size: 90% 90%;
 }
 
 @media screen and (max-width: 750px) {

@@ -9,10 +9,16 @@
 
         // add responsive dropdown toggle
         $('.dropdown').click(function () {
-            var thisContent = $(this).find('.menu-item-content');
-            // hide all other content before toggle
-            $('.menu-item-content').not(thisContent).slideUp();
-            thisContent.slideToggle();
+            if($('.hamburger').is(":visible")) {
+                var thisContent = $(this).find('.menu-item-content');
+                // hide all other content before toggle
+                $('.menu-item-content').not(thisContent).slideUp();
+                thisContent.slideToggle();
+
+                // todo: fix dup display none
+                if((thisContent).is(':hidden'))
+                    thisContent.css('display', '');
+            }
         });
     });
 
