@@ -240,7 +240,6 @@ a:hover {
 .about-svg {
     height: 200px;
     width: 200px;
-    cursor: pointer;
     background: #f2f2f2;
     margin-right: auto;
     margin-left: auto;
@@ -266,6 +265,50 @@ a:hover {
     -webkit-mask: url(wallet.svg) no-repeat 50% 50%;
     -webkit-mask-size: 90% 90%;
 }
+
+.tap-type-container {
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.tap-type-text {
+    display: inline-block;
+    padding: 12px;
+}
+
+.tap-type {
+    height: 50px;
+    width: 50px;
+    background: #333;
+    float: left;
+}
+
+.bus {
+    -webkit-mask: url(bus.svg) no-repeat 50% 50%;
+    -webkit-mask-size: 90% 90%;
+}
+
+.rapid {
+    -webkit-mask: url(fast.svg) no-repeat 50% 50%;
+    -webkit-mask-size: 90% 90%;
+}
+
+.ferry {
+    -webkit-mask: url(ferry.svg) no-repeat 50% 50%;
+    -webkit-mask-size: 90% 90%;
+}
+
+.street-car {
+    -webkit-mask: url(city-tram.svg) no-repeat 50% 50%;
+    -webkit-mask-size: 90% 90%;
+}
+
+.train {
+    -webkit-mask: url(train.svg) no-repeat 50% 50%;
+    -webkit-mask-size: 90% 90%;
+}
+
 
 @media screen and (max-width: 750px) {
     /*todo: separate out*/
