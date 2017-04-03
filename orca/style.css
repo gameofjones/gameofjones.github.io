@@ -266,22 +266,72 @@ a:hover {
     -webkit-mask-size: 90% 90%;
 }
 
+.how-to-container {
+    max-width: 1200px;
+    padding: 30px 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.how-to-subtitle {
+    max-width: 500px;
+    text-align: center;
+    margin: auto;
+}
+
+.play-button {
+    background: #1b49a0;
+    margin-right: auto;
+    margin-left: auto;
+    -webkit-mask: url(play-button.svg) no-repeat 50% 50%;
+    -webkit-mask-size: 90% 90%;
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+}
+
+.play-button:hover {
+    background-color: #0d338a;
+}
+
+.play-button-subtitle {
+    text-align: center;
+    font-size: .9em;
+}
+
+.tap-types {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+}
+
+.tap-video {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    margin: auto;
+    text-align: center;
+}
+
 .tap-type-container {
     display: inline-block;
     padding: 10px 0;
     width: 100%;
+    min-width: 200px;
 }
 
 .tap-type-text {
-    display: inline-block;
-    padding: 12px;
+    text-align: center;
+    min-width: 175px;
+    max-width: 240px;
+    margin: auto;
 }
 
-.tap-type {
+.tap-type-icon {
     height: 50px;
     width: 50px;
     background: #333;
-    float: left;
+    margin: 20px auto 0 auto;
 }
 
 .bus {
@@ -309,9 +359,22 @@ a:hover {
     -webkit-mask-size: 90% 90%;
 }
 
+.footer-line {
+    font-size: .75em;
+    text-align: center;
+}
 
+a.footer-link {
+    color: white;
+    padding: 0 10px;
+}
+
+a.footer-link:hover {
+    color: teal;
+}
+
+/*todo: separate out*/
 @media screen and (max-width: 750px) {
-    /*todo: separate out*/
     .top {
         overflow: hidden;
     }
