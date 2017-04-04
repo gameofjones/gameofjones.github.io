@@ -178,6 +178,7 @@ a:hover {
 .hero {
     position: relative;
     height: 645px;
+    max-height: calc(100vh - 69px);
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(transit-4.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -288,6 +289,7 @@ a:hover {
     cursor: pointer;
     height: 60px;
     width: 60px;
+    display: block;
 }
 
 .play-button:hover {
@@ -422,4 +424,50 @@ a.footer-link:hover {
     .dropdown:hover > .menu-item-content {
         display: none;
     }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 600ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    height: 52vw;
+    width: 70vw;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover {
+    color: teal;
+}
+.popup .content {
+    overflow: auto;
 }

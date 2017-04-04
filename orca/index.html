@@ -87,7 +87,13 @@
         <div class="how-to-container">
             <h1 style="text-align: center">One Card Is All You Need</h1>
             <p class="how-to-subtitle">ORCA is accepted on Community Transit, Everett Transit, King County Metro Transit, Kitsap Transit, Pierce Transit, Sound Transit and Washington State Ferries.</p>
-            <p><div class="play-button"></div></p>
+            <p>
+                <div style="width: 60px; margin: auto">
+                    <a href="#overlay">
+                        <span class="play-button"></span>
+                    </a>
+                </div>
+            </p>
             <p class="play-button-subtitle">Video: See how it works</p>
             <!--<div class="tap-video">
                 <iframe width="420" height="315" src="https://www.youtube.com/embed/7gVIXZ0RVEo" frameborder="0" allowfullscreen></iframe>
@@ -130,9 +136,17 @@
                     <a class="footer-link" href="http://www.soundtransit.org/sites/default/files/orca_tagalog.pdf" target="_blank">Tagalog Tiếng</a> 
                     <a class="footer-link" href="http://www.soundtransit.org/sites/default/files/orca_vietnamese.pdf" target="_blank">việt | Vietnamese</a>
                 </p>
-            <p class="footer-line">This is not for actual use. It is professional development only. Please go to <a class="footer-link" style="padding: 0" href="https://orcacard.com">orcacard.com</a></p></div>
+            <p class="footer-line">This site is not for actual use. It is for professional development only. Please go to <a class="footer-link" style="padding: 0" href="https://orcacard.com">orcacard.com</a></p></div>
             <div style="width: 100%">
             <img style="float: right; padding: 20px" src="digicert.png"/>
+            </div>
+        </div>
+        <div id="overlay" class="overlay">
+            <div class="popup">
+                <div style="padding: 20px 0;"><a class="close" href="#" onclick="refreshVideo()">&times;</a></div>
+                <div class="content">
+                    <iframe id="tap-video" style="width: 100%; height: 75%;" src="https://www.youtube.com/embed/7gVIXZ0RVEo" frameborder="0" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
     </body>

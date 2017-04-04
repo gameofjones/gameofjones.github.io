@@ -20,6 +20,12 @@
                     thisContent.css('display', '');
             }
         });
+
+
     });
 
 })(jQuery);
+
+function refreshVideo() { 
+    document.getElementById('tap-video').src = document.getElementById('tap-video').src
+}
