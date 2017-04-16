@@ -10,8 +10,9 @@
 
 body {
     margin: 0;
-    color: #333;
+    color: white;
     font-family: 'Source Sans Pro';
+    background: maroon;
 }
 
 span, p {
@@ -30,8 +31,11 @@ p {
 }
 
 .jumbotron {
-    height: 100vh;
-    background: no-repeat center fixed url(bull.jpg);
+    height: 792px;
+    max-height: 100vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(bull.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -51,10 +55,10 @@ p {
 }
 
 .jumbotron-text {
-    font-weight: bold;
     font-style: normal;
     font-size: 110px;
     color: white;
+    font-family: 'Anton', sans-serif;
 }
 
 .container {
