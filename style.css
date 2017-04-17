@@ -12,7 +12,7 @@ body {
     margin: 0;
     color: white;
     font-family: 'Source Sans Pro';
-    background: maroon;
+    background: #721121;
 }
 
 span, p {
@@ -31,7 +31,7 @@ p {
 }
 
 .jumbotron {
-    height: 792px;
+    height: 100vh;
     max-height: 100vh;
     background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(bull.jpg);
     background-repeat: no-repeat;
