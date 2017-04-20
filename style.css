@@ -1,0 +1,75 @@
+@viewport {
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+
+@-ms-viewport {
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+
+body {
+    margin: 0;
+    color: white;
+    font-family: 'Source Sans Pro';
+    background: #721121;
+}
+
+span, p {
+    font-family: 'Source Sans Pro';
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container-div {
+    margin-bottom: 40px;
+}
+
+p {
+    margin-top: 0;
+    line-height: 1.2;
+}
+
+.jumbotron {
+    height: 100vh;
+    max-height: 100vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(bull.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+.jumbotron-text-container {
+    position: relative;
+    top: 28%;
+    z-index: 4;
+    max-width: 100%;
+    padding-left: 50px;
+}
+
+.jumbotron-text {
+    font-style: normal;
+    font-size: 110px;
+    color: white;
+    font-family: 'Anton', sans-serif;
+}
+
+.container {
+    padding: 40px 50px 40px 50px;
+}
+
+.container-title {
+    font-size: 52px;
+}
+
+.hash-tag {
+    color: rebeccapurple;
+    font-weight: 700;
+}
