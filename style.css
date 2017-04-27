@@ -16,7 +16,6 @@ body {
 }
 
 span, p {
-    font-family: 'Source Sans Pro';
     font-weight: 400;
     font-style: normal;
 }
@@ -25,9 +24,15 @@ span, p {
     margin-bottom: 40px;
 }
 
+h1 {
+    font-family: 'Anton', sans-serif;
+    font-weight: normal;
+}
+
 p {
     margin-top: 0;
     line-height: 1.2;
+    font-size: 1.3em;
 }
 
 .jumbotron {
@@ -72,4 +77,42 @@ p {
 .hash-tag {
     color: rebeccapurple;
     font-weight: 700;
+}
+
+.grid {
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.cell-1 {
+    margin: 0 40px 40px 0;
+    max-width: 390px;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    min-width: 220px;
+}
+
+.cell-2 {
+    margin: 0 0 40px 0;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    min-width: 220px;
+}
+
+.me {
+    max-width:90%;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-filter: saturate(1.2);
+    display: block;
+    margin: auto
+}
+
+.thumbnail {
+    max-width:100%;
+    display: block;
+    margin: auto;
 }
