@@ -95,7 +95,7 @@ p {
 }
 
 .cell-2 {
-    margin: 0 0 40px 0;
+    margin: 0 20px 40px 0;
     -webkit-box-flex: 1;
     -webkit-flex: 1;
     flex: 1;
@@ -112,7 +112,24 @@ p {
 }
 
 .thumbnail {
-    max-width:100%;
+    width:100%;
     display: block;
     margin: auto;
+}
+
+.card-button {
+    background: #4fbbc2;
+    border: none;
+    line-height: 2em;
+    padding: 5px 10px;
+    border-radius: 2px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.card-button:hover {
+    background: #36a2a9;
 }
