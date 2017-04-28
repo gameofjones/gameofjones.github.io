@@ -20,6 +20,11 @@ span, p {
     font-style: normal;
 }
 
+a {
+    text-decoration: none;
+    color: #36a2a9;
+}
+
 .container-div {
     margin-bottom: 40px;
 }
@@ -86,7 +91,6 @@ p {
 }
 
 .cell-1 {
-    margin: 0 40px 40px 0;
     max-width: 390px;
     -webkit-box-flex: 1;
     -webkit-flex: 1;
@@ -95,15 +99,15 @@ p {
 }
 
 .cell-2 {
-    margin: 0 20px 40px 0;
     -webkit-box-flex: 1;
     -webkit-flex: 1;
     flex: 1;
     min-width: 220px;
+    padding: 10px;
 }
 
 .me {
-    max-width:90%;
+    max-width: 90%;
     border-radius: 50%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -webkit-filter: saturate(1.2);
@@ -111,14 +115,20 @@ p {
     margin: auto
 }
 
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px 0 0 0;
+    background: white;
+}
+
 .thumbnail {
-    width:100%;
+    width: 90%;
     display: block;
     margin: auto;
 }
 
 .card-button {
-    background: #4fbbc2;
+    background: goldenrod;
     border: none;
     line-height: 2em;
     padding: 5px 10px;
@@ -131,5 +141,5 @@ p {
 }
 
 .card-button:hover {
-    background: #36a2a9;
+    background: darkgoldenrod;
 }
