@@ -1,81 +1,85 @@
-<html>
+<html ng-app="app">
     <title>Kiah Jones</title>
     <head>
         <meta name="viewport" content="initial-scale=1">
         <link rel="shortcut icon" type="image/png" href="crown-1.png" />
-        <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Fanwood+Text|Fjord+One|Quattrocent" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular.js"></script>
+        <script src="index.js"></script>
     </head>
-    <body>
-        <div class="jumbotron">
-            <div class="jumbotron-text-container">
-                <p>
-                    <span class="jumbotron-text">Hi,</span>
-                </p>
-                <p style="margin-top: -20px;">
-                    <span class="jumbotron-text">I'm Kiah.</span>
-                </p>
-            </div>
+    <body ng-controller="MainController">
+        <div class="section-hero">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="container-width">
+                        <div class="container-title">
+                            <div class="hello">
+                                <div class="body">
+                                    <h1>Hi,</h1>
+                                    <h1>I'm Kiah</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-body">
+                            <div class="body">
+                                <p>
+                                    I'm a full-stack software developer living in Seattle, Washington who loves to make products as usable and simple as possible.
+                                    I'm currently working on improving my product design/ UX / front-end skills so scroll down to take a peek on some of my projects.
+                                    When I'm not coding, you can find me reading, binge watching, or falling off a climbing wall... or out eating delicious things 
+                                    with friends because what's life without pizza and donuts?
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- /container-width -->
+                </div><!-- /container -->
+            </div><!-- /container-fluid -->
         </div>
-        <div class="about-me" style="padding: 20px 50px; max-width: 1200px; margin: 75px auto 50px;">
-            <div class="grid">
-                <div class="cell-1">
-                    <img src="me.jpg" class="me"/>
-                </div>
-                <div class="cell-2">
-                    <h1>About Me</h1>
-                    <p>I'm a full-stack software developer living in Seattle, Washington who loves to make products as usable and pleasing as possible.</p>
-                    <p>I'm currently working on improving my UX/front-end skills so scroll down to take a peek on some of my projects.</p>
-                    <p>When I'm not coding, you can find me reading, binge watching, or falling off a climbing wall... or out eating delicious things 
-                    with friends because what's life without pizza and donuts?</p>
-                </div>
-            </div>
-        </div>
-        <div style="width: 100%; background: gainsboro; padding: 0 0 20px 0; display: inline-block">
-        <div class="skills" style="max-width: 1200px; margin: 40px auto">
-            <h1 style="padding: 0 20px; color: #333">Projects</h1>
-            <div class="grid" style="margin: 40px 0 0 0">
-                <div class="cell-2" style="max-width: 410px; padding: 20px; 0">
-                    <div class="card">
-                        <a href="https://gameofjones.github.io/orca">
-                            <img class="thumbnail" src="orca-screenshot.jpg"/>
-                        </a>
-                        <div style="padding: 20px; background: white; color: #333; min-height: 205px">
-                            <h2>ORCA</h2>
-                            <p style="font-size: 1em">A responsive redesign of <a href="https://orcacard.com">orcacard.com</a> This project is enabling me to learn
-                            how to use Angular 2.x SPA architecture along with CSS3 animations, and CSS from scratch - no framework.</p>
-                            <a style="text-decoration: none; color: inherit" href="https://gameofjones.github.io/orca"><div class="card-button">check it out</div></a>
+        <div class="section-projects">
+            <div class="container-projects">
+                <h1 style="padding: 0 20px; color: #333">Projects</h1>
+                <div class="grid">
+                    <div class="cell">
+                        <div id="card-1" class="card" card-resize>
+                            <a href="https://gameofjones.github.io/orca">
+                                <img class="thumbnail" src="orca-screenshot.jpg"/>
+                            </a>
+                            <div class="card-body">
+                                <h2>ORCA</h2>
+                                <p class="card-text">A responsive redesign of <a href="https://orcacard.com">orcacard.com</a> This project is enabling me to learn
+                                how to use Angular 2.x SPA architecture along with CSS3 animations, and CSS from scratch - no framework.</p>
+                                <a style="text-decoration: none; color: inherit" href="https://gameofjones.github.io/orca"><div class="card-button">check it out</div></a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="cell-2" style="max-width: 410px; padding: 20px; 0">
-                    <div class="card">
-                        <a href="https://gameofjones.github.io/orca">
-                            <img class="thumbnail" src="goodreads.jpg"/>
-                        </a>
-                        <div style="padding: 20px; background: white; color: #333; min-height: 205px">
-                            <h2>goodreads</h2>
-                            <p style="font-size: 1em">This might be the next project of mine. <a href="https://goodreads.com">goodreads.com</a> is a site that 
-                            a lot of book lovers use and most hate. I might take on the ideas of the reddit community and do a mock implentation with MongoDB.</p>
+                    <div class="cell">
+                        <div id="card-2" class="card">
+                            <a href="https://gameofjones.github.io/orca">
+                                <img class="thumbnail" src="goodreads.jpg"/>
+                            </a>
+                            <div class="card-body">
+                                <h2>goodreads</h2>
+                                <p class="card-text">This might be the next project of mine. <a href="https://goodreads.com">goodreads.com</a> is a site that 
+                                a lot of book lovers use and most hate. I might take on the ideas of the reddit community and do a mock implentation with MongoDB.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="cell-2" style="max-width: 410px; padding: 20px; 0">
-                    <div class="card">
-                        <a href="https://gameofjones.github.io/orca">
-                            <img class="thumbnail" src="anonymous.jpg"/>
-                        </a>
-                        <div style="padding: 20px; background: white; color: #333; min-height: 205px">
-                            <h2>TBD</h2>
-                            <p style="font-size: 1em">Not sure what I will want to work on but chances are I won't even get to another project until 2018.
-                                Maybe I'll tackle some original concepts.
-                            </p>
+                    <div class="cell">
+                        <div id="card-3" class="card">
+                            <a href="https://gameofjones.github.io/orca">
+                                <img class="thumbnail" src="anonymous.jpg"/>
+                            </a>
+                            <div class="card-body">
+                                <h2>TBD</h2>
+                                <p class="card-text">Not sure what I will want to work on but chances are I won't even get to another project until 2018.
+                                    Maybe I'll tackle some original concepts.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        </div>
+                </div><!-- /grid -->
+            </div><!-- /container-projects -->
+        </div><!-- /section-projects -->
     </body>
 <html>

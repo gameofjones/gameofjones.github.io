@@ -11,8 +11,8 @@
 body {
     margin: 0;
     color: white;
-    font-family: 'Source Sans Pro';
-    background: #721121;
+    font-family: 'Fanwood Text';
+    background: #f4f4f4;
 }
 
 span, p {
@@ -25,12 +25,7 @@ a {
     color: #36a2a9;
 }
 
-.container-div {
-    margin-bottom: 40px;
-}
-
 h1 {
-    font-family: 'Anton', sans-serif;
     font-weight: normal;
 }
 
@@ -40,12 +35,14 @@ p {
     font-size: 1.3em;
 }
 
-.jumbotron {
-    height: 100vh;
+.section-hero {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(bull.jpg);
+    background-size: cover;
+    padding: 100px 0 0 0;
+    overflow: hidden;
+    color: #fff;
+    height: calc(100vh - 100px);
     max-height: 100vh;
-    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(bull.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -53,57 +50,90 @@ p {
     -o-background-size: cover;
     background-size: cover;
     margin-bottom: 0px;
-    padding: 0px;
 }
 
-.jumbotron-text-container {
-    position: relative;
-    top: 28%;
-    z-index: 4;
-    max-width: 100%;
-    padding-left: 50px;
+.section-hero .container {
+    width: 100%;
 }
 
-.jumbotron-text {
-    font-style: normal;
-    font-size: 110px;
-    color: white;
-    font-family: 'Anton', sans-serif;
+.section-hero .container-width {
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
-.container {
-    padding: 40px 50px 40px 50px;
+.section-hero .container-title {
+    margin: 0 auto;
+    text-align: left;
+    letter-spacing: 15px;
+    font-family: 'Quattrocento', Georgia, serif;
 }
 
-.container-title {
-    font-size: 52px;
+.section-hero .hello {
+    word-wrap: break-word;
+    margin: 0 auto;
 }
 
-.hash-tag {
-    color: rebeccapurple;
-    font-weight: 700;
+.section-hero .titleFullContainer {
+    display: none;
+    font-family: 'Quattrocento', Georgia, serif;
+}
+
+.section-hero .container-body {
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Fanwood Text', Georgia, serif;
+}
+
+.section-hero .hello h1 {
+    font-size: 90px;
+    line-height: 100px;
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 15px;
+}
+
+.section-hero .body {
+    max-width: 540px;
+    margin: 80px auto;
+}
+
+.section-hero .body p {
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.section-projects {
+    width: 100%;
+    padding: 0 0 20px 0;
+    display: inline-block;
+}
+
+.container-projects {
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.title-projects {
+    padding: 0 20px;
+    color: #333;
 }
 
 .grid {
     display: flex;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
+    margin: 40px 0 0 0;
 }
 
-.cell-1 {
-    max-width: 390px;
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-    flex: 1;
-    min-width: 220px;
-}
-
-.cell-2 {
+.cell {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
     flex: 1;
     min-width: 220px;
     padding: 10px;
+    max-width: 360px;
+    padding: 20px;
 }
 
 .me {
@@ -119,6 +149,7 @@ p {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 20px 0 0 0;
     background: white;
+    max-width: 100%;
 }
 
 .thumbnail {
@@ -127,19 +158,53 @@ p {
     margin: auto;
 }
 
+.card-body {
+    padding: 20px;
+    background: white;
+    color: #333;
+    min-height: 205px;
+}
+
+.card-text {
+    font: .825em/1.625 'Fjord One', Georgia, serif;
+}
+
 .card-button {
-    background: goldenrod;
+    background: grey;
     border: none;
     line-height: 2em;
     padding: 5px 10px;
     border-radius: 2px;
     color: white;
-    font-weight: bold;
     text-align: center;
     cursor: pointer;
     text-transform: uppercase;
 }
 
 .card-button:hover {
-    background: darkgoldenrod;
+    background: #666;
+}
+
+@media only screen and (max-width: 500px) {
+    .section-hero {
+        height: auto;
+        max-height: inherit;
+        padding: 0;
+    }
+    
+    .section-hero .hello h1 {
+        font-size: 50px;
+        line-height: 50px;
+        padding: 0 30px 0;
+        text-align: left;
+    }
+
+    .section-hero .body {
+        max-width: 540px;
+        margin: inherit;
+    }
+
+    .section-hero .body p {
+        padding: 30px;
+    }
 }
