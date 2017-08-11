@@ -41,8 +41,9 @@ p {
     padding: 100px 0 0 0;
     overflow: hidden;
     color: #fff;
-    height: calc(100vh - 100px);
-    max-height: 100vh;
+    /*height: calc(100vh - 100px);
+    max-height: 100vh;*/
+    min-height: calc(100vh - 100px);
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
