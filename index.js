@@ -13,14 +13,14 @@ app.controller('MainController', ['$scope', '$window', function($scope, $window)
     });
 
     var resizeCards = function() {
-        var heightArray = [$('#card-1').height(), $('#card-2').height(), $('#card-3').height()]
+       /* var heightArray = [$('#card-1').height(), $('#card-2').height(), $('#card-3').height()]
         var maxHeight = Math.max.apply(null, heightArray)
 
         var widthArray = [$('#card-1').width(), $('#card-2').width(), $('#card-3').width()]
         var minWidth = Math.min.apply(null, widthArray)
 
         $('.card').height(maxHeight)
-        $('.card').width(minWidth)
+        $('.card').width(minWidth)*/
     }
 
     resizeCards();
