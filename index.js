@@ -2,6 +2,16 @@
 
 var app = angular.module('app',[]);
 
+$(document).ready(function () {
+    $('#hero-button').click(function () {
+        var container = $('body'), scrollTo = $('#projects');
+
+        container.animate({
+            scrollTop: scrollTo.offset().top - container.offset().top + container.scrollTop() - window.pageYOffset
+        });
+    })
+});
+
 app.controller('MainController', ['$scope', '$window', function($scope, $window) {
     $scope.logResize = function () {
         // why is this needed for directive?

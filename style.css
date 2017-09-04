@@ -262,4 +262,13 @@ span.cursor {
         width: 180px;
         word-wrap: break-word;
     }
+
+    .cell {
+        max-width: none;
+    }
+
+    .card {
+        width: auto;
+        max-width: none;
+    }
 }
