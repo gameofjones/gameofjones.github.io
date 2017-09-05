@@ -129,10 +129,17 @@ h1.typing-2 {
     visibility: hidden;
 }
 
+.sub-heading {
+    padding: 20px 20px;
+    font-family: 'Quattrocento', Georgia, serif;
+    font-size: 50px;
+}
+
 h2 {
     font-family: 'Quattrocento', Georgia, serif;
     font-weight: normal;
     font-size: 40px;
+    margin: 0 0 40px;
 }
 
 span.cursor {
@@ -163,6 +170,25 @@ span.cursor {
 .title-projects {
     padding: 0 20px;
     color: #333;
+}
+
+#about-me {
+    padding: 0 20px;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 1px;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.fade-in {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1.5s linear;
+    -webkit-transition: opacity 1.5s linear;
 }
 
 .grid {

@@ -1,9 +1,31 @@
 'use strict';
 
-var app = angular.module('app',[]);
-
 $(document).ready(function () {
-    $('#hero-button').click(function () {
+
+    // scroll listener
+    $(window).scroll(function() {
+        
+        // listen to when project section comes into view
+        var aboutMe = document.getElementById('about-me');
+
+        // todo: find a better way to get this number dynamically for component library
+        if (aboutMe.getBoundingClientRect().top < 820)
+        {
+            fadeIn(aboutMe);
+        }
+
+        // listen to when project section comes into view
+        var cards = document.getElementById('cards');
+
+        if (cards.getBoundingClientRect().top < 805)
+        {
+            fadeIn(cards);
+        }
+	    
+    });
+
+    // scroll to project section
+    $('#hero-button').click(function (){
         var container = $('body'), scrollTo = $('#projects');
 
         container.animate({
@@ -12,43 +34,21 @@ $(document).ready(function () {
     })
 });
 
+var app = angular.module('app',[]);
+
 app.controller('MainController', ['$scope', '$window', function($scope, $window) {
-    $scope.logResize = function () {
-        // why is this needed for directive?
-    };
-
-    angular.element($window).on('resize', function () {
-        console.log($window.innerWidth);
-        resizeCards();
-    });
-
-    var resizeCards = function() {
-       /* var heightArray = [$('#card-1').height(), $('#card-2').height(), $('#card-3').height()]
-        var maxHeight = Math.max.apply(null, heightArray)
-
-        var widthArray = [$('#card-1').width(), $('#card-2').width(), $('#card-3').width()]
-        var minWidth = Math.min.apply(null, widthArray)
-
-        $('.card').height(maxHeight)
-        $('.card').width(minWidth)*/
-    }
-
-    resizeCards();
+    
 }]);
 
-app.directive('cardResize', ['$window', function ($window) {
+var hasClass = function (element, className) {
+    return (' ' + element.className + ' ').indexOf(' ' + className + ' ') > -1;
+}
 
-     return {
-        link: link,
-        restrict: 'E'            
-     };
+var fadeIn = function (element) {
+    var isIn = hasClass(element, 'fade-in');
 
-     function link(scope, element, attrs){
-
-       angular.element($window).bind('resize', function(){
-            var array = [$('#card-1').height(), $('#card-2').height(), $('#card-3').height()]
-            var maxHeight = Math.max.apply(null, array)
-            $('.card').height(maxHeight)
-       });    
-     }    
- }]);
+    if(!isIn)
+    {
+        element.className += ' fade-in';
+    }
+}
