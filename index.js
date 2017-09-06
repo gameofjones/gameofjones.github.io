@@ -17,7 +17,7 @@ $(document).ready(function () {
         // listen to when project section comes into view
         var cards = document.getElementById('cards');
 
-        if (cards.getBoundingClientRect().top < 805)
+        if (cards.getBoundingClientRect().top < 655)
         {
             fadeIn(cards);
         }
