@@ -2,26 +2,14 @@
 
 $(document).ready(function () {
 
+    showContent();
+    // todo: add fade ins for mobile
+    var screenHeight = window.innerHeight;
+    
+
     // scroll listener
     $(window).scroll(function() {
-        
-        // listen to when project section comes into view
-        var aboutMe = document.getElementById('about-me');
-
-        // todo: find a better way to get this number dynamically for component library
-        if (aboutMe.getBoundingClientRect().top < 820)
-        {
-            fadeIn(aboutMe);
-        }
-
-        // listen to when project section comes into view
-        var cards = document.getElementById('cards');
-
-        if (cards.getBoundingClientRect().top < 655)
-        {
-            fadeIn(cards);
-        }
-	    
+        showContent();
     });
 
     // scroll to project section
@@ -39,6 +27,25 @@ var app = angular.module('app',[]);
 app.controller('MainController', ['$scope', '$window', function($scope, $window) {
     
 }]);
+
+var showContent = function () {
+
+    var aboutMe = document.getElementById('about-me');
+
+    // todo: find a better way to get this number dynamically for component library
+    if (aboutMe.getBoundingClientRect().top < 820)
+    {
+        fadeIn(aboutMe);
+    }
+
+    // listen to when project section comes into view
+    var cards = document.getElementById('cards');
+
+    if (cards.getBoundingClientRect().top < 655)
+    {
+        fadeIn(cards);
+    }
+}
 
 var hasClass = function (element, className) {
     return (' ' + element.className + ' ').indexOf(' ' + className + ' ') > -1;
