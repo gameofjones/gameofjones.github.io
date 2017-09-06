@@ -133,6 +133,7 @@ h1.typing-2 {
 #monogram {
     font-size: 182px;
     line-height: 182px;
+    min-height: 182px;
     padding: 0 30px 0 13px;
     letter-spacing: -15px;
     font-weight: normal;
@@ -269,7 +270,11 @@ span.cursor {
     background: maroon;
 }
 
-@media only screen and (max-width: 500px) {   
+@media only screen and (max-width: 500px) {
+    .section-hero {
+        max-height: 100vh;
+    }
+    
     .section-hero .hello h1 {
         font-size: 60px;
         line-height: 70px;
