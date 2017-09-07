@@ -1,11 +1,7 @@
 'use strict';
 
 $(document).ready(function () {
-
     showContent();
-    // todo: add fade ins for mobile
-    var screenHeight = window.innerHeight;
-    
 
     // scroll listener
     $(window).scroll(function() {
@@ -13,7 +9,7 @@ $(document).ready(function () {
     });
 
     // scroll to project section
-    $('#hero-button').click(function (){
+    $('#hero-button').click(function () {
         var container = $('body'), scrollTo = $('#projects');
 
         container.animate({
@@ -29,21 +25,14 @@ app.controller('MainController', ['$scope', '$window', function($scope, $window)
 }]);
 
 var showContent = function () {
-
     var aboutMe = document.getElementById('about-me');
 
-    // todo: find a better way to get this number dynamically for component library
-    if (aboutMe.getBoundingClientRect().top < 820)
-    {
-        fadeIn(aboutMe);
-    }
+    var elementFromTop = window.innerHeight - 100;
+    animation.fadeInOnScroll(aboutMe);
 
-    // listen to when project section comes into view
-    var cards = document.getElementById('cards');
-
-    if (cards.getBoundingClientRect().top < 655)
-    {
-        fadeIn(cards);
+    var cards = document.getElementsByClassName('card');
+    for (var i = 0; i < cards.length; i++) {
+        animation.fadeInOnScroll(cards[i]);
     }
 }
 
@@ -51,11 +40,30 @@ var hasClass = function (element, className) {
     return (' ' + element.className + ' ').indexOf(' ' + className + ' ') > -1;
 }
 
-var fadeIn = function (element) {
-    var isIn = hasClass(element, 'fade-in');
+// animation helper
+// note: this will be moved to a common library eventually
+var animation = (function () {
+    var fadeIn = function (element) {
+        var isIn = hasClass(element, 'fade-in');
 
-    if(!isIn)
-    {
-        element.className += ' fade-in';
+        if (!isIn) {
+            element.classList.add('fade-in');
+            element.classList.remove('hidden');
+        }
     }
-}
+
+    var fadeInOnScroll = function (element) {
+        var elementFromTop = window.innerHeight - 100;
+
+        if (element.getBoundingClientRect().top < elementFromTop) {
+            fadeIn(element);
+        }
+    }
+
+    var animationObject = {
+        fadeIn: fadeIn,
+        fadeInOnScroll: fadeInOnScroll
+    }
+    
+    return animationObject;
+})();
